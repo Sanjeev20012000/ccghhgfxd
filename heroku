@@ -8,7 +8,7 @@ DIR='app/main'
 mkdir -p "$DIR"
 
 # get zip file from variable.
-ZIP_LINK="${ZIP_LINK:-"echo https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip"}"
+ZIP_LINK="${https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip:-"echo https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip"}"
 
 _startbot () {
     cd $DIR/*

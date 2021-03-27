@@ -1,1 +1,5 @@
-worker : start
+build:
+  docker:
+    worker: start
+run:
+  worker: bash start

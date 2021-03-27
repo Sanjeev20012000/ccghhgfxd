@@ -8,13 +8,13 @@ DIR='app/main'
 mkdir -p "$DIR"
 
 # get zip file from variable.
-ZIP_LINK="${ZIP_LINK:-"echo put_your_link_in_variables"}"
+ZIP_LINK="${ZIP_LINK:-"echo https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip"}"
 
 _startbot () {
     cd $DIR/*
     sleep 3
     echo "  --- >><< --- Starting [X] --- >><< ---"
-    bash run
+    bash start
     sleep 5
 }
 

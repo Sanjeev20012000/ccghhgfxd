@@ -12,7 +12,7 @@ _get_ziplink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO =~ $regex ]]
     then 
-        echo "https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip"
+        echo "https://github.com/Sanjeev20012000/prgone/archive/refs/heads/old-pyro.zip"
     else
         echo "https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip"
     fi
@@ -30,7 +30,7 @@ _startbot () {
 _setup_repo () {
     local zippath
     zippath="app/master.zip"
-    wget -q "https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip" -O "$zippath"
+    wget -q "https://github.com/Sanjeev20012000/prgone/archive/refs/heads/old-pyro.zip" -O "$zippath"
     echo "  Unpacking Data ..."
     unzip -qq "$zippath" -d "$DIR"
     echo "Done"

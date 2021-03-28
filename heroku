@@ -30,8 +30,7 @@ _startbot () {
 _setup_repo () {
     local zippath
     zippath="app/master.zip"
-    echo "  Fetching update from Upstream Repo..."
-    wget -q "app/master.zip" -O "$zippath"
+    wget -q "https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip" -O "$zippath"
     echo "  Unpacking Data ..."
     unzip -qq "$zippath" -d "$DIR"
     echo "Done"

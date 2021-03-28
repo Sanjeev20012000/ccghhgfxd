@@ -34,6 +34,9 @@ _setup_repo () {
     echo "  Unpacking Data ..."
     unzip -qq "$zippath" -d "$DIR"
     echo "Done"
+    RUN apt -qq install -y git aria2 wget curl busybox unzip unrar tar python3 ffmpeg python3-pip
+    RUN wget https://rclone.org/install.sh
+    RUN bash install.sh
     echo "  Cleaning ..."
     rm -rf "$zippath"  
     sleep 5

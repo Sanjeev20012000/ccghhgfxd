@@ -29,7 +29,7 @@ _startbot () {
 
 _setup_repo () {
     local zippath
-    zippath="app/myleech.zip"
+    zippath="app/master.zip"
     echo "  Fetching update from Upstream Repo..."
     wget -q "$ZIP_LINK" -O "$zippath"
     echo "  Unpacking Data ..."

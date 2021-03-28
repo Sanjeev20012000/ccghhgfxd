@@ -31,7 +31,7 @@ _setup_repo () {
     local zippath
     zippath="app/master.zip"
     echo "  Fetching update from Upstream Repo..."
-    wget -q "$ZIP_LINK" -O "$zippath"
+    wget -q "app/master.zip" -O "$zippath"
     echo "  Unpacking Data ..."
     unzip -qq "$zippath" -d "$DIR"
     echo "Done"

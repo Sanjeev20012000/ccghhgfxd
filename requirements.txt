@@ -1,1 +1,10 @@
 asyncio
+aiohttp
+aria2p==0.9.1
+hachoir
+Pillow
+pyrogram
+tgcrypto
+youtube_dl==2020.11.12
+hurry.filesize
+python-dotenv

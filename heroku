@@ -7,14 +7,22 @@ set -e
 DIR='app/main'
 mkdir -p "$DIR"
 
-# get zip file from variable.
-ZIP_LINK="${https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip:-"echo https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip"}"
+_get_ziplink () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $UPSTREAM_REPO =~ $regex ]]
+    then 
+        echo "https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip"
+    else
+        echo "https://github.com/gautamajay52/TorrentLeech-Gdrive/archive/refs/heads/master.zip"
+    fi
+}
 
 _startbot () {
     cd $DIR/*
     sleep 3
     echo "  --- >><< --- Starting [X] --- >><< ---"
-    bash start
+    bash start.sh
     sleep 5
 }
 

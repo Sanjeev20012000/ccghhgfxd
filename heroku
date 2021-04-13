@@ -30,7 +30,7 @@ _startbot () {
 _setup_repo () {
     local zippath
     zippath="app/master.zip"
-    wget -q "https://github.com/Sanjeev20012000/TorrentLeech-Gdrive/archive/refs/heads/master.zip" -O "$zippath"
+    wget -q "https://github.com/Sanjeev20012000/skabajileech/archive/refs/heads/master.zip" -O "$zippath"
     echo "  Unpacking Data ..."
     unzip -qq "$zippath" -d "$DIR"
     echo "Done"

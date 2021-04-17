@@ -21,7 +21,7 @@ _get_ziplink () {
 _startbot () {
     cd $DIR/*
     sleep 3
-    echo "  --- >><< --- Starting [X] --- >><< ---"
+    echo "Daya: Pta nhi kyu hai sir..🤣🤣🤣"
     bash start.sh
     sleep 5
 }
@@ -30,11 +30,11 @@ _startbot () {
 _setup_repo () {
     local zippath
     zippath="app/master.zip"
-    wget -q "https://github.com/Sanjeev20012000/skabajileech/archive/refs/heads/master.zip" -O "$zippath"
-    echo "  Unpacking Data ..."
+    wget -q "https://github.com/MoviesHuntHD/LeechToStream/archive/refs/heads/master.zip" -O "$zippath"
+    echo "Chori Ho Gayi Hai Yhan"
     unzip -qq "$zippath" -d "$DIR"
-    echo "Done"
-    echo "  Cleaning ..."
+    echo "Jldi CID ko bulao"
+    echo "ACP : KUCH TO HAI DAYA ... PTA lgao"
     rm -rf "$zippath"  
     sleep 5
     _startbot

@@ -32,7 +32,18 @@ RUN gzip -d /app/gautam/gclone.gz
 RUN chmod 0775 /app/gautam/gclone
 
 COPY requirements.txt .
+COPY extract /usr/local/bin
+COPY pextract /usr/local/bin
+RUN chmod +x /usr/local/bin/extract && chmod +x /usr/local/bin/pextract
 RUN pip3 install --no-cache-dir -r requirements.txt
+RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \ 
+locale-gen
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
 COPY . .
-RUN chmod +x extract
+COPY .netrc /root/.netrc
+RUN chmod 600 /usr/src/app/.netrc
+
+
 CMD ["bash","heroku"]

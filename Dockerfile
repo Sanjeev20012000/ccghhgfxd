@@ -1,9 +1,8 @@
 FROM ubuntu:20.04
 
 
-RUN mkdir ./app
-RUN chmod 777 ./app
-WORKDIR /app
+WORKDIR /usr/src/app
+RUN chmod 777 /usr/src/app
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata
@@ -25,11 +24,6 @@ RUN apt -qq update --fix-missing && \
 
 RUN wget https://rclone.org/install.sh
 RUN bash install.sh
-
-RUN mkdir /app/gautam
-RUN wget -O /app/gautam/gclone.gz https://git.io/JJMSG
-RUN gzip -d /app/gautam/gclone.gz
-RUN chmod 0775 /app/gautam/gclone
 
 COPY requirements.txt .
 COPY extract /usr/local/bin

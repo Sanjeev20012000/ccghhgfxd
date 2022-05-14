@@ -30,7 +30,7 @@ _startbot () {
 _setup_repo () {
     local zippath
     zippath="app/master.zip"
-    wget -q "https://github.com/Sanjeev20012000/slam-mirror-bot/archive/refs/heads/master.zip" -O "$zippath"
+    wget -q "https://github.com/Sanjeev20012000/Leech-mirror-1/archive/refs/heads/master.zip" -O "$zippath"
     echo "Unpacking Data ..."
     unzip -qq "$zippath" -d "$DIR"
     echo "Done"

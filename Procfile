@@ -1,1 +1,1 @@
-worker: bash heroku
+web: bash heroku

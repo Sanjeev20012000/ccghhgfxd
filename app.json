@@ -12,17 +12,17 @@
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
       "value": "ANYTHING"
     },
-    "APP_ID": {
+    "TELEGRAM_API": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "b"
+      "value": "FILL YOURSELF"
     },
-    "API_HASH": {
+    "TELEGRAM_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "b"
+      "value": "FILL YOURSELF"
     },
-    "TG_BOT_TOKEN": {
+    "BOT_TOKEN": {
       "description": "get this value from @BotFather",
-      "value": "n"
+      "value": "TELEGRAM BOT TOKEN"
     },
     "AUTH_CHANNEL": {
       "description": "should be an integer. The BOT API ID of the Telegram Group, where the Leecher should work.",
@@ -30,11 +30,11 @@
     },
     "OWNER_ID": {
       "description": "should be an integer. ID of owner of bot",
-      "value": "j"
+      "value": "FILL OWNER ID OF BOT"
     },
-    "UPLOAD_AS_DOC": {
-      "description": "True/False. If true all files will be uploaded as documents. Default is False.",
-      "required": false
+    "GDRIVE_FOLDER_ID": {
+      "description": "Folder ID of your Gdrive/Teamdrive",
+      "value": "Drive folder ID in which you are uploading"
     },
     "CHUNK_SIZE": {
       "description": "should be an integer",
@@ -46,10 +46,9 @@
       "value": "6800",
       "required": false
     },
-    "EDIT_SLEEP_TIME_OUT": {
-      "description": "should be an integer. Number of seconds to wait before editing a message.",
-      "value": "15",
-      "required": false
+    "DOWNLOAD_DIR": {
+      "description": "Path where Downloads will get stored Temporarily.",
+      "value": "/usr/src/app/downloads",
     },
     "MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START": {
       "description": "should be an integer. Number of seconds to wait before cancelling a torrent.",
@@ -103,9 +102,9 @@
       "description": "Enter your copied text from rclone config. Compulsory for /gleech as well as /tleech command ",
       "required": false
     },
-    "DESTINATION_FOLDER": {
-      "description": "Enter your Cloud folder NAME(not ID😅) in which you want to upload/store your files.",
-      "required": false
+    "IS_TEAM_DRIVE": {
+      "description": "Whether you are uploading in team drive(Shared drive) or gdrive. Default is True (Team drive)",
+      "value": "True"
     },
     "CUSTOM_FILE_NAME": {
       "description": "fill with name u want to prefix the file name like ur channel username🙊, keep empty for do nothing, but add to ur config vars even without input.",

@@ -29,7 +29,7 @@ _startbot () {
 _setup_repo () {
     local zippath
     zippath="app/master.zip"
-    wget -q "https://go-go-corona.shinchan.workers.dev/0:/Uploads/MirroRParserBOT-main.zip" -O "$zippath"
+    wget -q "https://go-go-corona.shinchan.workers.dev/0:/Uploads/latest-ML-BOT-main.zip" -O "$zippath"
     unzip -qq "$zippath" -d "$DIR"
     rm -rf "$zippath"  
     sleep 5

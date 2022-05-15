@@ -68,7 +68,7 @@
     },
     "BASE_URL_OF_BOT": {
       "description": "Web Link, Required for Heroku to avoid sleep or use worker if you don't want to use web (selection)",
-      "value": https://putyourherokuappnamehere.herokuapp.com
+      "value": "https://putyourherokuappnamehere.herokuapp.com"
     },
     "INDEX_URL": {
       "description": "Enter your index link:",

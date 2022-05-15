@@ -4,9 +4,9 @@
   "keywords": [
     "telegram"
   ],
-  "repository": "https://google.com",
+  "repository": "https://github.com/Sanjeev20012000/skabaileech",
   "success_url": "https://t.me/telegram",
-  "website": "https://github.com",
+  "website": "https://github.com/Sanjeev20012000/skabaileech",
   "stack": "container",
   "env": {
     "ENV": {

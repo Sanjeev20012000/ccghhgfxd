@@ -71,25 +71,25 @@
       "description": "Enter your custom leech command like /leech@urgroupname and so on. Default is /leech",
       "required": false
     },
-    "INDEX_LINK": {
+    "INDEX_URL": {
       "description": "Enter your index link:",
-      "required": false
+      "value": "index url"
     },
-    "GLEECH_COMMAND": {
-      "description": "Enter your custom gleech command like /gleech1@urgroupname and so on. Default is /gleech",
-      "required": false
+    "STOP_DUPLICATE": {
+      "description": "Make it true if you want to Stop mirror Same file/folder multiple times.",
+      "value": "false"
     },
-    "TELEGRAM_LEECH_COMMAND_G": {
-      "description": "Enter your custom tleech command like /tleech1@urgroupname and so on. Default is /tleech",
-      "required": false
+    "SERVER_PORT": {
+      "description": "No need To change.",
+      "value": "80"
     },
-    "YTDL_COMMAND": {
-      "description": "Enter your custom ytdl command like ytdl1@urgroupname and so on. Default is /ytdl.",
-      "required": false
+    "CRYPT": {
+      "description": "Crypt id, used to clone/leech gdtot links",
+      "value": "Get it from Your gdtot cookies."
     },
-    "PYTDL_COMMAND_G": {
-      "description": "Enter your custom pytdl command like pytdl1@urgroupname and so on. Default is /pytdl.",
-      "required": false
+    "SUDO_USERS": {
+      "description": "List of id of sudo users, Separated by space",
+      "value": "IDs of sudo users # Separated by space"
     },
     "TORRENT_DIRECT_LIMIT": {
       "description": "Maximum Size of file/folder to clone.",

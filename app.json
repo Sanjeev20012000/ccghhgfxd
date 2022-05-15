@@ -1,12 +1,13 @@
 {
-  "name": "Telegram Torrent Leecher",
-  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @torrentleechgdrivesupport!",
+  "name": "Telegram Bot",
+  "description": "A Telegram bot based on Pyrogram.",
   "keywords": [
     "telegram"
   ],
-  "repository": "https://github.com/gautamajay52/TorrentLeech-Gdrive",
-  "success_url": "https://t.me/torrentleechgdrivesupport",
-  "website": "https://github.com/gautamajay52/TorrentLeech-Gdrive",
+  "repository": "https://google.com",
+  "success_url": "https://t.me/telegram",
+  "website": "https://github.com",
+  "stack": "container",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -103,7 +104,7 @@
       "value": "False"
     },
     "IS_TEAM_DRIVE": {
-      "description": "Whether you are uploading in team drive(Shared drive) or gdrive. Default is True (Team drive)",
+      "description": "Set to 'True' if GDRIVE_FOLDER_ID is from a Team Drive else False or Leave it empty.",
       "value": "True"
     },
     "CUSTOM_FILE_NAME": {
@@ -111,5 +112,9 @@
       "required": false
     }
   },
-  "stack": "container"
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ]
 }

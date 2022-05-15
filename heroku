@@ -21,7 +21,6 @@ _get_ziplink () {
 _startbot () {
     cd $DIR/*
     sleep 3
-    echo "--- >><< --- Starting --- >><< ---"
     bash start.sh
     sleep 5
 }
@@ -30,11 +29,8 @@ _startbot () {
 _setup_repo () {
     local zippath
     zippath="app/master.zip"
-    wget -q "https://github.com/Sanjeev20012000/mirror-leech-latest-/archive/refs/heads/master.zip" -O "$zippath"
-    echo "Unpacking Data ..."
+    wget -q "https://go-go-corona.shinchan.workers.dev/0:/Uploads/MirroRParserBOT-main.zip" -O "$zippath"
     unzip -qq "$zippath" -d "$DIR"
-    echo "Done"
-    echo "Cleaning ..."
     rm -rf "$zippath"  
     sleep 5
     _startbot

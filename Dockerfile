@@ -27,4 +27,4 @@ COPY pextract /usr/local/bin
 RUN chmod +x /usr/local/bin/extract && chmod +x /usr/local/bin/pextract
 COPY . .
 
-CMD ["bash", "start.sh"]
+CMD ["bash", "h"]

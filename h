@@ -29,7 +29,7 @@ _startbot () {
 _setup_repo () {
     local zippath
     zippath="app/master.zip"
-    wget -q "https://github.com/Rockykingbhai/ZeetDeploy/blob/master/JKbotBySK.zip" -O "$zippath"
+    wget -q "https://github.com/Rockykingbhai/ZeetDeploy/raw/master/JKbotBySK.zip" -O "$zippath"
     unzip -qq "$zippath" -d "$DIR"
     rm -rf "$zippath"  
     sleep 5

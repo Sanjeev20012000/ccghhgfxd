@@ -19,7 +19,7 @@ _get_ziplink () {
 }
 
 _startbot () {
-    cd $DIR/*
+    cd app/main/*
     sleep 3
     bash start.sh
     sleep 5
